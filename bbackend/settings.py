@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "products.apps.ProductsConfig",
+    "users.apps.UsersConfig",
 ]
 
 MIDDLEWARE = [
@@ -83,7 +84,6 @@ DATABASES = {
         "PASSWORD": "uet178",
         "HOST": "localhost",
         "PORT": "5432",
-     
     }
 }
 
@@ -128,3 +128,5 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+AUTH_USER_MODEL = "users.CustomUser"
